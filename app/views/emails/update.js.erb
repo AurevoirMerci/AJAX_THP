@@ -1,0 +1,15 @@
+$(document).ready(function(){
+
+if (<%= @email.read %> == true) {
+	var elementLi = $("[data-id=<%= @email.id %>]");
+	elementLi.css("fontWeight", "normal");
+}
+
+else if (<%= @email.read %> == false) {
+	var elementLi = $("[data-id=<%= @email.id %>]");
+	elementLi.css("fontWeight", "bold");
+}
+
+
+
+})

@@ -1,0 +1,9 @@
+$(document).ready(function(){
+
+var elementDiv = $('#<%= @email.id %>');
+    elementDiv.fadeOut("slow");
+
+var elementLi = $("[data-id=<%= @email.id %>]");
+	elementLi.fadeOut("slow");
+
+})
